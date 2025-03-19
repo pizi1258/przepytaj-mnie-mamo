@@ -12,15 +12,19 @@
             height: 100vh;
             margin: 0;
             text-align: center;
+            position: relative; /* Ensure the body is a reference for centering */
         }
         div {
             margin: 10px;
+            position: absolute; /* Ensure div is positioned relative to the body */
+            top: 50%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%); /* Correct centering to account for element size */
         }
     </style>
 </head>
 <body>
     <div>
-         <h1>Nauczyciel</h1>
         <elevenlabs-convai agent-id="twFZARmPfoXh7hHaduvo"></elevenlabs-convai>
         <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
     </div>
