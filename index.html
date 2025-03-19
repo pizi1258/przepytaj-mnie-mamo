@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Script</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-    </style>
-</head>
-<body>
-    <elevenlabs-convai agent-id="ijZWUX1efPuCOwqeukeX"></elevenlabs-convai>
-    <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Przepytaj mnie, mamo!</title>
+        <script type="module" src="script.js"></script>
+    </head>
+    <body style="font-family: Arial, sans-serif; text-align: center; padding: 50px;">
+        <h1>Przepytaj mnie, mamo!</h1>
+        <div style="margin-bottom: 20px;">
+            <button id="startButton" style="padding: 10px 20px; margin: 5px;">Start</button>
+            <button id="stopButton" style="padding: 10px 20px; margin: 5px;" disabled>Stop</button>
+        </div>
+        <div style="font-size: 18px;">
+            <p>Status: <span id="connectionStatus">Wyłączony</span></p>
+            <p>Nauczyciel<span id="agentStatus">słucha</span></p>
+        </div>
+
+    </body>
 </html>
